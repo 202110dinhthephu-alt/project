@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ĐỌC LÀ GAY VỚI LÉ BIÊN</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;    /* Canh phải nội dung */
+            justify-content: flex-start;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .image-container {
+            margin-bottom: 80px;
+        }
+
+        video {
+            border: 2px solid #333;
+            border-radius: 0px;
+            max-width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>ĐỌC LÀ GAY VỚI LÉ BIÊN</h1>
+    <h1>Tao đã bảo là đọc là gay với lé biên rồi mà<h1>
+
+    <!-- Ảnh -->
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='hahaha.jpg') }}" alt="Ảnh minh họa" width="400">
+    </div>
+</body>
+    <h1>ĐCM vẫn cố đọc à nể bây rồi đấy</h1>
+    <h1>má lỳ thế nói tới vậy rồi còn đọc</h1>
+    <h1>Mình là người mà chứ có phải là trâu đâu mà lỳ thía</h1>
+    <h1>Nói rồi đọc là gay với lé biên :)))</h1>
+
+    <!-- Ảnh -->
+    <div class="image_container">
+        <img src="{{ url_for('static', filename='hahahaha.jpg') }}" alt="Ảnh minh họa" width="400">
+    </div>
+
+    <!-- Video -->
+    <video width="640" height="360" controls>
+        <source src="{{ url_for('static', filename='video.mp4') }}" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+    </video>
+</html>
+
